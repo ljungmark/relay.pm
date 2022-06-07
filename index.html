@@ -16,31 +16,44 @@
         body {
             align-content: center;
             background: hsl(216deg 12% 8% / 100%);
+            box-sizing: border-box;
             color: hsl(0deg 0% 98% / 100%);
             display: grid;
             height: 100vh;
             justify-items: center;
             margin: 0;
+            padding: 1rem;
             row-gap: clamp(0.5rem, 2vw, 2rem);
             user-select: none;
             width: 100vw;
         }
 
-        p {
-            font: 200 clamp(1rem, 4vw, 4rem) / 0.9 Inter, system-ui, sans-serif;
-            margin: 0;
+        img {
+            background: hsl(0deg 0% 100% / 100%);
+            border-radius: 0.3vw 1vw;
+            max-width: 10vw;
+            min-width: 8rem;
+            padding: 1vw;
         }
+
         h1 {
-            font: 600 clamp(0.25rem, 1vw, 1rem) / 0.9 Inter, system-ui, sans-serif;
+            font: 700 clamp(1rem, 4vw, 4rem) / 0.9 Inter, system-ui, sans-serif;
             letter-spacing: 0.4em;
+            line-height: 1.2;
             margin: 0;
             text-transform: uppercase;
+        }
+        p {
+            font: 400 clamp(1rem, 2vw, 1.4rem) / 0.9 Inter, system-ui, sans-serif;
+            line-height: 1.2;
+            margin: 0;
         }
     </style>
     </style>
 </head>
 <body>
-    <p>Automated Identity Masking & Message Broker</p>
+    <img src="logotype.svg">
     <h1>Private Message Relay</h1>
+    <p>relay.pm is my automated identity masking & messaging broker. It protects my e-mail accounts from unsolicited upselling and advertisement.</p>
 </body>
 </html>
