@@ -43,10 +43,10 @@
         .relay {
             max-width: 20rem;
             width: 100%;
-        }
 
-        .relay .path {
-            fill: hsl(148deg 100% 14% / 100%);
+            &  .path {
+                fill: hsl(148deg 100% 14% / 100%);
+            }
         }
 
         div {
@@ -63,21 +63,24 @@
         .signature {
             margin-top: 0.6em;
             max-width: 14em;
-        }
-        .signature .path {
-            animation: signature 1500ms linear forwards;
-            fill: transparent;
-            stroke: hsl(216deg 12% 8% / 100%);
-            stroke-dasharray: 14892;
-        }
-        .signature .dot {
-            animation: dot 250ms 1150ms linear forwards;
-            fill: transparent;
-            transform-origin: 0 0;
-        }
-        .signature .period {
-            animation: period 1000ms 800ms cubic-bezier(0.5, 1, 0.89, 1) forwards;
-            fill: transparent;
+
+            & .path {
+                animation: signature 1500ms linear forwards;
+                fill: transparent;
+                stroke: hsl(216deg 12% 8% / 100%);
+                stroke-dasharray: 14892;
+            }
+
+            & .dot {
+                animation: dot 250ms 1150ms linear forwards;
+                fill: transparent;
+                transform-origin: 0 0;
+            }
+
+             & .period {
+                animation: period 1000ms 800ms cubic-bezier(0.5, 1, 0.89, 1) forwards;
+                fill: transparent;
+            }
         }
 
         @keyframes signature {
