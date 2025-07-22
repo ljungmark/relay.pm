@@ -83,6 +83,14 @@
         @keyframes signature {
             0% {
                 fill: transparent;
+                mask-image: linear-gradient(
+                    -60deg,
+                    hsl(0deg 0% 100% / 100%) 25%,
+                    hsl(0deg 0% 100% / 20%) 50%,
+                    hsl(0deg 0% 100% / 100%) 75%
+                );
+                mask-position: 100%;
+                mask-size: 400%;
                 stroke-dashoffset: 14892;
                 stroke-width: 5;
             }
@@ -93,8 +101,10 @@
             }
             80% {
                 fill: hsl(216deg 12% 8% / 100%);
+                mask-position: 0%;
                 stroke-dashoffset: 4000;
                 stroke-width: 2;
+                transition: mask-position 1000ms;
             }
             100% {
                 fill: hsl(216deg 12% 8% / 100%);
